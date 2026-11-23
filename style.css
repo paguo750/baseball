@@ -116,13 +116,10 @@ footer.site a{color:var(--muted)}
 .comment-jump a:hover{text-decoration:underline}
 .comments-card{padding-bottom:20px}
 #waline{--waline-font-size:15px;margin-top:10px}
-#waline .wl-cards:not(.wl-card .wl-cards){counter-reset:resnum}
-#waline .wl-cards:not(.wl-card .wl-cards) > .wl-card{counter-increment:resnum}
-#waline .wl-cards:not(.wl-card .wl-cards) > .wl-card::before{
-  content:counter(resnum);
-  display:inline-flex;align-items:center;justify-content:center;
-  min-width:1.8em;height:1.8em;padding:0 .35em;margin-bottom:4px;
-  border-radius:999px;background:#f3e9cf;color:#7a5c1e;
-  font-weight:700;font-size:13px;line-height:1;
+#waline .wl-cards{counter-reset:resnum}
+#waline .wl-cards > .wl-card-item{counter-increment:resnum}
+#waline .wl-cards > .wl-card-item > .wl-card > .wl-head .wl-nick::before{
+  content:counter(resnum) ". ";
+  color:#7a5c1e;font-weight:700;
 }
 .waline-comment-count{font-weight:700}
