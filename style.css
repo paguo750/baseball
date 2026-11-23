@@ -97,3 +97,11 @@ footer.site a{color:var(--muted)}
 }
 .tag-chip:hover{text-decoration:underline}
 .reactions{margin:0 0 8px;line-height:1.9}
+
+/* 反応グラフ */
+.rstats{margin:6px 0 12px}
+.rbar{display:flex;align-items:center;gap:10px;margin:6px 0}
+.rbar-label{flex:0 0 7.5em;font-size:14px}
+.rbar-track{flex:1;background:var(--line);border-radius:999px;height:12px;overflow:hidden}
+.rbar-fill{display:block;height:100%;background:var(--accent);border-radius:999px}
+.rbar-pct{flex:0 0 3em;text-align:right;font-size:14px;font-weight:700}
