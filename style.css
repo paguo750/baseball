@@ -86,3 +86,14 @@ footer.site a{color:var(--muted)}
 .site-nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:6px}
 .site-nav a{font-size:14px;text-decoration:none;color:var(--accent);font-weight:700}
 .site-nav a:hover{text-decoration:underline}
+
+
+/* タグとファンの反応 */
+.tag-list{margin:10px 0 4px;line-height:2.1}
+.tag-chip{
+  display:inline-block;margin:0 6px 6px 0;padding:2px 12px;border-radius:999px;
+  border:1px solid var(--line);background:var(--accent-soft);color:var(--ink);
+  font-size:13px;text-decoration:none;
+}
+.tag-chip:hover{text-decoration:underline}
+.reactions{margin:0 0 8px;line-height:1.9}
