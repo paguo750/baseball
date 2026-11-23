@@ -34,6 +34,7 @@
       <p class="src">出典：<a href="https://hochi.news/articles/20261123-OHT1T51086.html" target="_blank" rel="noopener">スポーツ報知</a>／<a href="https://prtimes.jp/main/html/rd/p/000000529.000077656.html" target="_blank" rel="noopener">東京ドーム（PR TIMES）</a>（要約は自分の言葉で書いています。詳しくは出典元をご覧ください）</p>
     </div>
     <p class="tag-list"><a class="tag-chip" href="../tags/巨人.html">#巨人</a> <a class="tag-chip" href="../tags/浦田俊輔.html">#浦田俊輔</a> <a class="tag-chip" href="../tags/東京ドームMVP賞.html">#東京ドームMVP賞</a> <a class="tag-chip" href="../tags/ファンフェスタ.html">#ファンフェスタ</a></p>
+    <p class="comment-jump"><a href="#comments">💬 コメント（<span class="waline-comment-count" data-path="/news/2026-11-23-giants-urata-tokyodome-mvp.html">0</span>件）を見る・書く ↓</a></p>
   </section>
 
   <section class="card">
@@ -42,23 +43,27 @@
     <p class="muted">※ SNSや掲示板で見られた反応の空気を、自分の言葉でまとめたものです。書き込みそのものの引用はしていません。割合は目視で分類したざっくりした集計です。</p>
   </section>
 
-  <section class="card" id="comments">
-    <h2>コメント</h2>
-    <p class="comment-note">GitHub アカウントでログインすると、そのままコメントできます。個人情報は書かないでください。</p>
-    <script src="https://giscus.app/client.js"
-        data-repo="paguo750/baseball"
-        data-repo-id="R_kgDOV4qA9w"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOV4qA984DLyVo"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="light"
-        data-lang="ja"
-        crossorigin="anonymous"
-        async>
+  <section class="card comments-card" id="comments">
+    <h2>コメント（<span class="waline-comment-count" data-path="/news/2026-11-23-giants-urata-tokyodome-mvp.html">0</span>件）</h2>
+    <p class="comment-note">名前もメールもいりません。本文だけ書けば、そのまま表示されます。みんなでワイワイ語りましょう。個人情報は書かないでください。</p>
+    <div id="waline"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css">
+    <script type="module">
+      import { init, commentCount } from 'https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.js';
+      init({
+        el: '#waline',
+        serverURL: 'https://paguo-waline.vercel.app',
+        path: '/news/2026-11-23-giants-urata-tokyodome-mvp.html',
+        lang: 'ja',
+        meta: [],
+        requiredMeta: [],
+        login: 'disable',
+        imageUploader: false,
+        search: false,
+        pageSize: 100,
+        commentSorting: 'oldest',
+      });
+      commentCount({ serverURL: 'https://paguo-waline.vercel.app' });
     </script>
   </section>
 

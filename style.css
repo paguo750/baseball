@@ -105,3 +105,24 @@ footer.site a{color:var(--muted)}
 .rbar-track{flex:1;background:var(--line);border-radius:999px;height:12px;overflow:hidden}
 .rbar-fill{display:block;height:100%;background:var(--accent);border-radius:999px}
 .rbar-pct{flex:0 0 3em;text-align:right;font-size:14px;font-weight:700}
+
+/* コメント欄（Waline）となんじぇい型の体裁 */
+.comment-jump{margin:14px 0 2px}
+.comment-jump a{
+  display:inline-block;padding:8px 16px;border-radius:999px;
+  background:var(--accent-soft);border:1px solid var(--line);
+  color:var(--ink);font-weight:700;text-decoration:none;font-size:15px;
+}
+.comment-jump a:hover{text-decoration:underline}
+.comments-card{padding-bottom:20px}
+#waline{--waline-font-size:15px;margin-top:10px}
+#waline .wl-cards:not(.wl-card .wl-cards){counter-reset:resnum}
+#waline .wl-cards:not(.wl-card .wl-cards) > .wl-card{counter-increment:resnum}
+#waline .wl-cards:not(.wl-card .wl-cards) > .wl-card::before{
+  content:counter(resnum);
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:1.8em;height:1.8em;padding:0 .35em;margin-bottom:4px;
+  border-radius:999px;background:#f3e9cf;color:#7a5c1e;
+  font-weight:700;font-size:13px;line-height:1;
+}
+.waline-comment-count{font-weight:700}
