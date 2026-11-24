@@ -1,10 +1,15 @@
+/* 飼い主の野球コメントスタジアム — スタジアム／スポーツ紙面風デザイン（2026-11-24 リニューアル）
+   本体 pug-o.jp の柔らかいクリーム系とは対照的に、ネイビー×赤×金の硬派な配色で統一する。 */
 :root{
-  --ink:#33302a;
-  --muted:#6f6a5e;
-  --accent:#d9a400;
-  --accent-soft:#fdf3d3;
-  --line:#e7dfc8;
-  --bg:#fbf9f3;
+  --navy:#0d2137;
+  --navy-2:#14304f;
+  --navy-tint:#e8eef5;
+  --red:#d0342c;
+  --gold:#f2b705;
+  --ink:#10151c;
+  --muted:#5b6672;
+  --line:#d5dce3;
+  --bg:#edf0f3;
   --card:#ffffff;
 }
 *{box-sizing:border-box}
@@ -15,59 +20,108 @@ body{
   background:var(--bg);
   line-height:1.8;
 }
-a{color:#9a7400}
-header.site{background:var(--card);border-bottom:1px solid var(--line)}
+a{color:#0f5aa8}
+a:hover{color:var(--red)}
+
+/* ヘッダー：スタンドの看板風 */
+header.site{
+  background:var(--navy);
+  border-bottom:4px solid var(--gold);
+}
 header.site .inner{
-  max-width:880px;margin:0 auto;padding:14px 20px;
+  max-width:920px;margin:0 auto;padding:14px 20px;
   display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
 }
-.brand{font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
-.brand small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
-main{max-width:880px;margin:0 auto;padding:28px 20px 56px}
+.brand{
+  font-weight:800;font-size:20px;letter-spacing:.04em;
+  color:#fff;text-decoration:none;line-height:1.35;
+}
+.brand:hover{color:var(--gold)}
+.brand small{
+  display:block;font-weight:400;font-size:11.5px;letter-spacing:.08em;color:#9fb4c9;
+}
+.site-nav{display:flex;gap:8px;flex-wrap:wrap}
+.site-nav a{
+  font-size:13.5px;text-decoration:none;color:#fff;font-weight:700;
+  border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:3px 13px;
+}
+.site-nav a:hover{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+
+main{max-width:920px;margin:0 auto;padding:28px 20px 56px}
+
+/* ヒーロー：ナイター照明のスタジアム風 */
 .hero{
-  background:var(--accent-soft);border:1px solid var(--line);border-radius:14px;
-  padding:28px 24px;margin-bottom:28px;
+  position:relative;overflow:hidden;
+  background:
+    repeating-linear-gradient(-45deg, rgba(255,255,255,.028) 0 14px, transparent 14px 28px),
+    linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 70%, #1b4066 100%);
+  border-radius:14px;
+  padding:34px 28px;margin-bottom:28px;color:#fff;
+  box-shadow:0 10px 24px rgba(13,33,55,.28);
 }
-.hero h1{margin:0 0 8px;font-size:24px}
-.hero p{margin:0;color:var(--muted)}
+.hero::after{
+  content:"";position:absolute;right:-70px;top:-70px;
+  width:250px;height:250px;border-radius:50%;
+  background:radial-gradient(circle at 35% 35%, #ffffff 0%, #dfe6ec 78%);
+  border:4px dashed rgba(208,52,44,.5);
+  opacity:.16;pointer-events:none;
+}
+.hero h1{
+  margin:0 0 10px;font-size:30px;font-weight:900;line-height:1.45;letter-spacing:.02em;
+}
+.hero p{margin:0;color:#c9d6e4;max-width:34em}
 .badge{
-  display:inline-block;background:var(--accent);color:#fff;
-  font-size:12px;border-radius:999px;padding:2px 12px;margin-bottom:10px;
+  display:inline-block;background:var(--red);color:#fff;
+  font-size:12px;font-weight:700;letter-spacing:.12em;
+  border-radius:4px;padding:3px 12px;margin-bottom:14px;
 }
+
+/* カード：ポスター風の太枠＋オフセット影 */
 section.card{
-  background:var(--card);border:1px solid var(--line);border-radius:14px;
-  padding:22px 24px;margin-bottom:20px;
+  background:var(--card);
+  border:2px solid var(--navy);border-radius:10px;
+  box-shadow:6px 6px 0 rgba(13,33,55,.9);
+  padding:22px 24px;margin-bottom:24px;
 }
-section.card h2{margin:0 0 10px;font-size:19px}
+section.card h2{
+  margin:0 0 12px;font-size:20px;font-weight:800;letter-spacing:.03em;
+  border-left:7px solid var(--red);padding-left:11px;line-height:1.4;
+}
 section.card p,section.card li{color:var(--ink)}
 section.card .muted{color:var(--muted)}
 ul{padding-left:20px}
-footer.site{border-top:1px solid var(--line);background:var(--card)}
+
+footer.site{background:var(--navy);border-top:4px solid var(--gold)}
 footer.site .inner{
-  max-width:880px;margin:0 auto;padding:20px;
-  font-size:13px;color:var(--muted);
+  max-width:920px;margin:0 auto;padding:20px;
+  font-size:13px;color:#9fb4c9;
   display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between;
 }
-footer.site a{color:var(--muted)}
+footer.site a{color:#dbe5ef}
 
 /* ニュースまとめ */
-.edition-head{margin:0 0 6px;font-size:20px}
+.edition-head{
+  margin:0 0 6px;font-size:26px;font-weight:800;line-height:1.5;
+  border-bottom:3px solid var(--navy);padding-bottom:10px;
+}
 .edition-meta{color:var(--muted);font-size:13px;margin:0 0 16px}
-.news-item{border-top:1px solid var(--line);padding:16px 0 6px}
+.news-item{border-top:2px solid var(--line);padding:16px 0 6px}
 .news-item:first-of-type{border-top:none;padding-top:4px}
 .news-item h3{margin:0 0 6px;font-size:16.5px;line-height:1.6}
 .news-item p{margin:0 0 8px}
 .news-item .hitokoto{
-  background:var(--accent-soft);border-radius:10px;padding:8px 12px;
-  font-size:14px;margin:0 0 10px;
+  background:var(--navy-tint);border-left:5px solid var(--red);
+  border-radius:0 8px 8px 0;padding:9px 13px;
+  font-size:14.5px;margin:0 0 10px;
 }
 .news-item .src{font-size:13px;color:var(--muted);margin:0 0 10px}
 .archive-list{margin:0;padding-left:20px}
+.archive-list a{font-weight:600}
 
 /* 広告枠：有効化するまで何も表示しない */
 .ad-slot{display:none}
 
-/* コメント */
+/* コメント（旧フォーム用クラスは残置） */
 .comment{border-top:1px solid var(--line);padding:12px 0 4px}
 .comment .c-meta{font-size:13px;color:var(--muted);margin:0 0 2px}
 .comment .c-body{margin:0 0 8px;white-space:pre-wrap}
@@ -77,25 +131,19 @@ footer.site a{color:var(--muted)}
   font:inherit;background:#fff;color:var(--ink);
 }
 .comment-form button{
-  margin-top:14px;background:var(--accent);color:#fff;border:none;cursor:pointer;
+  margin-top:14px;background:var(--navy);color:#fff;border:none;cursor:pointer;
   padding:10px 22px;border-radius:999px;font:inherit;font-weight:700;
 }
 .comment-note{font-size:13px;color:var(--muted)}
-
-/* サイト内ナビ */
-.site-nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:6px}
-.site-nav a{font-size:14px;text-decoration:none;color:var(--accent);font-weight:700}
-.site-nav a:hover{text-decoration:underline}
-
 
 /* タグとファンの反応 */
 .tag-list{margin:10px 0 4px;line-height:2.1}
 .tag-chip{
   display:inline-block;margin:0 6px 6px 0;padding:2px 12px;border-radius:999px;
-  border:1px solid var(--line);background:var(--accent-soft);color:var(--ink);
-  font-size:13px;text-decoration:none;
+  border:1.5px solid var(--navy);background:#fff;color:var(--navy);
+  font-size:13px;font-weight:700;text-decoration:none;
 }
-.tag-chip:hover{text-decoration:underline}
+.tag-chip:hover{background:var(--navy);color:#fff;text-decoration:none}
 .reactions{margin:0 0 8px;line-height:1.9}
 
 /* 反応グラフ */
@@ -103,19 +151,20 @@ footer.site a{color:var(--muted)}
 .rbar{display:flex;align-items:center;gap:10px;margin:6px 0}
 .rbar-label{flex:0 0 7.5em;font-size:14px}
 .rbar-track{flex:1;background:var(--line);border-radius:999px;height:12px;overflow:hidden}
-.rbar-fill{display:block;height:100%;background:var(--accent);border-radius:999px}
+.rbar-fill{display:block;height:100%;background:linear-gradient(90deg, var(--navy-2), var(--red));border-radius:999px}
 .rbar-pct{flex:0 0 3em;text-align:right;font-size:14px;font-weight:700}
 
 /* コメント欄（Waline）となんじぇい型の体裁 */
 .comment-jump{margin:14px 0 2px}
 .comment-jump a{
-  display:inline-block;padding:8px 16px;border-radius:999px;
-  background:var(--accent-soft);border:1px solid var(--line);
-  color:var(--ink);font-weight:700;text-decoration:none;font-size:15px;
+  display:inline-block;padding:9px 18px;border-radius:999px;
+  background:var(--red);border:none;
+  color:#fff;font-weight:700;text-decoration:none;font-size:15px;
+  box-shadow:3px 3px 0 rgba(13,33,55,.85);
 }
-.comment-jump a:hover{text-decoration:underline}
+.comment-jump a:hover{color:#fff;text-decoration:underline}
 .comments-card{padding-bottom:20px}
-#waline{--waline-font-size:15px;margin-top:10px}
+#waline{--waline-font-size:15px;--waline-theme-color:var(--navy);--waline-active-color:var(--red);margin-top:10px}
 #waline .wl-cards{counter-reset:resnum}
 #waline .wl-cards > .wl-card-item{counter-increment:resnum}
 #waline .wl-cards > .wl-card-item::before{
@@ -123,27 +172,30 @@ footer.site a{color:var(--muted)}
   flex:0 0 auto;align-self:flex-start;
   display:inline-flex;align-items:center;justify-content:center;
   min-width:1.8em;height:1.8em;padding:0 .35em;
-  border-radius:999px;background:#f3e9cf;color:#7a5c1e;
+  border-radius:6px;background:var(--navy);color:#fff;
   font-weight:700;font-size:13px;line-height:1;
 }
 .waline-comment-count{font-weight:700}
 
-/* 人気ランキング（2026-11-24 追加） */
-.rank-grid{display:flex;flex-wrap:wrap;gap:16px}
-.rank-col{flex:1 1 220px;min-width:0}
-.rank-col h3{margin:0 0 8px;font-size:15px}
+/* 人気ランキング：スコアボード風 */
 .rank-list{list-style:none;margin:0;padding:0}
-.rank-list li{display:flex;align-items:baseline;gap:8px;padding:6px 0;border-bottom:1px dashed #e3dcc4}
+.rank-list li{display:flex;align-items:baseline;gap:9px;padding:7px 0;border-bottom:1px dashed var(--line)}
 .rank-list li:last-child{border-bottom:none}
-.rank-num{display:inline-block;flex:none;width:22px;height:22px;line-height:22px;text-align:center;border-radius:50%;background:#e8e2cc;color:#7a5c1e;font-weight:bold;font-size:13px}
-.rank-num.rank-1{background:#f0c85a;color:#5c4300}
-.rank-num.rank-2{background:#d9d9d9;color:#444}
-.rank-num.rank-3{background:#e6b98a;color:#5c3a00}
-.rank-pv{flex:none;margin-left:auto;font-size:12px;color:#888;white-space:nowrap}
-.pv-note{font-size:13px;color:#888}
+.rank-num{
+  display:inline-block;flex:none;width:24px;height:24px;line-height:24px;text-align:center;
+  border-radius:5px;background:var(--navy-2);color:#fff;font-weight:800;font-size:13.5px;
+}
+.rank-num.rank-1{background:var(--red);color:#fff}
+.rank-num.rank-2{background:var(--navy);color:#fff}
+.rank-num.rank-3{background:#40648c;color:#fff}
+.rank-pv{flex:none;margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.pv-note{font-size:13px;color:var(--muted)}
 
-/* ランキングのタブ切り替え（2026-11-24 追加） */
+/* ランキングのタブ切り替え */
 .rank-tabs{display:flex;gap:8px;margin-bottom:10px}
-.rank-tab{flex:1;padding:9px 0;border:1px solid #d8cf9f;border-radius:999px;background:#fffdf2;color:#7a5c1e;font-size:14px;font-weight:bold;cursor:pointer}
-.rank-tab.active{background:#f0c85a;border-color:#f0c85a;color:#5c4300}
+.rank-tab{
+  flex:1;padding:9px 0;border:2px solid var(--navy);border-radius:8px;
+  background:#fff;color:var(--navy);font-size:14px;font-weight:800;cursor:pointer;letter-spacing:.06em;
+}
+.rank-tab.active{background:var(--navy);color:#fff}
 .rank-panel[hidden]{display:none}
