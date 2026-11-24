@@ -1,15 +1,15 @@
-/* 飼い主の野球コメントスタジアム — スタジアム／スポーツ紙面風デザイン（2026-11-24 リニューアル）
-   本体 pug-o.jp の柔らかいクリーム系とは対照的に、ネイビー×赤×金の硬派な配色で統一する。 */
+/* 飼い主の野球コメントスタジアム — ネイビー×赤×金の上品なスポーツ面デザイン（2026-11-24 リニューアル第2版）
+   第1版の看板風の強さを抑え、余白・細い線・柔らかい影で品よく。配色の方向性は維持する。 */
 :root{
-  --navy:#0d2137;
-  --navy-2:#14304f;
-  --navy-tint:#e8eef5;
-  --red:#d0342c;
-  --gold:#f2b705;
-  --ink:#10151c;
-  --muted:#5b6672;
-  --line:#d5dce3;
-  --bg:#edf0f3;
+  --navy:#12283f;
+  --navy-2:#1a3a5c;
+  --navy-tint:#eef2f7;
+  --red:#c23a32;
+  --gold:#c9a227;
+  --ink:#1c232b;
+  --muted:#66707b;
+  --line:#dde3e9;
+  --bg:#f3f5f7;
   --card:#ffffff;
 }
 *{box-sizing:border-box}
@@ -18,99 +18,98 @@ body{
   font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;
   color:var(--ink);
   background:var(--bg);
-  line-height:1.8;
+  line-height:1.85;
 }
 a{color:#0f5aa8}
 a:hover{color:var(--red)}
 
-/* ヘッダー：スタンドの看板風 */
+/* ヘッダー */
 header.site{
-  background:var(--navy);
-  border-bottom:4px solid var(--gold);
+  background:linear-gradient(180deg, var(--navy-2), var(--navy));
+  border-bottom:2px solid var(--gold);
 }
 header.site .inner{
-  max-width:920px;margin:0 auto;padding:14px 20px;
+  max-width:920px;margin:0 auto;padding:16px 20px;
   display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
 }
 .brand{
-  font-weight:800;font-size:20px;letter-spacing:.04em;
-  color:#fff;text-decoration:none;line-height:1.35;
+  font-weight:700;font-size:19px;letter-spacing:.06em;
+  color:#fff;text-decoration:none;line-height:1.4;
 }
-.brand:hover{color:var(--gold)}
+.brand:hover{color:#e8d48a}
 .brand small{
-  display:block;font-weight:400;font-size:11.5px;letter-spacing:.08em;color:#9fb4c9;
+  display:block;font-weight:400;font-size:11.5px;letter-spacing:.1em;color:#a9bccf;
 }
 .site-nav{display:flex;gap:8px;flex-wrap:wrap}
 .site-nav a{
-  font-size:13.5px;text-decoration:none;color:#fff;font-weight:700;
-  border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:3px 13px;
+  font-size:13px;text-decoration:none;color:#eef2f7;font-weight:600;
+  border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:3px 13px;
+  transition:background .15s, color .15s;
 }
-.site-nav a:hover{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.site-nav a:hover{background:rgba(255,255,255,.14);color:#fff}
 
-main{max-width:920px;margin:0 auto;padding:28px 20px 56px}
+main{max-width:920px;margin:0 auto;padding:32px 20px 60px}
 
-/* ヒーロー：ナイター照明のスタジアム風 */
+/* ヒーロー */
 .hero{
   position:relative;overflow:hidden;
-  background:
-    repeating-linear-gradient(-45deg, rgba(255,255,255,.028) 0 14px, transparent 14px 28px),
-    linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 70%, #1b4066 100%);
-  border-radius:14px;
-  padding:34px 28px;margin-bottom:28px;color:#fff;
-  box-shadow:0 10px 24px rgba(13,33,55,.28);
+  background:linear-gradient(130deg, var(--navy) 0%, var(--navy-2) 65%, #22486e 100%);
+  border-radius:16px;
+  padding:40px 32px;margin-bottom:30px;color:#fff;
+  box-shadow:0 12px 28px rgba(18,40,63,.22);
 }
 .hero::after{
-  content:"";position:absolute;right:-70px;top:-70px;
-  width:250px;height:250px;border-radius:50%;
+  content:"";position:absolute;right:-80px;top:-80px;
+  width:260px;height:260px;border-radius:50%;
   background:radial-gradient(circle at 35% 35%, #ffffff 0%, #dfe6ec 78%);
-  border:4px dashed rgba(208,52,44,.5);
-  opacity:.16;pointer-events:none;
+  border:3px dashed rgba(194,58,50,.45);
+  opacity:.09;pointer-events:none;
 }
 .hero h1{
-  margin:0 0 10px;font-size:30px;font-weight:900;line-height:1.45;letter-spacing:.02em;
+  margin:0 0 12px;font-size:29px;font-weight:800;line-height:1.5;letter-spacing:.05em;
 }
-.hero p{margin:0;color:#c9d6e4;max-width:34em}
+.hero p{margin:0;color:#ccd9e6;max-width:34em}
 .badge{
   display:inline-block;background:var(--red);color:#fff;
-  font-size:12px;font-weight:700;letter-spacing:.12em;
-  border-radius:4px;padding:3px 12px;margin-bottom:14px;
+  font-size:11.5px;font-weight:700;letter-spacing:.14em;
+  border-radius:999px;padding:3px 13px;margin-bottom:16px;
 }
 
-/* カード：ポスター風の太枠＋オフセット影 */
+/* カード */
 section.card{
   background:var(--card);
-  border:2px solid var(--navy);border-radius:10px;
-  box-shadow:6px 6px 0 rgba(13,33,55,.9);
-  padding:22px 24px;margin-bottom:24px;
+  border:1px solid var(--line);border-radius:14px;
+  box-shadow:0 4px 18px rgba(18,40,63,.07);
+  padding:24px 26px;margin-bottom:22px;
 }
 section.card h2{
-  margin:0 0 12px;font-size:20px;font-weight:800;letter-spacing:.03em;
-  border-left:7px solid var(--red);padding-left:11px;line-height:1.4;
+  margin:0 0 12px;font-size:19px;font-weight:700;letter-spacing:.04em;color:var(--navy);
+  border-left:4px solid var(--red);padding-left:11px;line-height:1.45;
 }
 section.card p,section.card li{color:var(--ink)}
 section.card .muted{color:var(--muted)}
 ul{padding-left:20px}
 
-footer.site{background:var(--navy);border-top:4px solid var(--gold)}
+footer.site{background:var(--navy);border-top:2px solid var(--gold)}
 footer.site .inner{
-  max-width:920px;margin:0 auto;padding:20px;
-  font-size:13px;color:#9fb4c9;
+  max-width:920px;margin:0 auto;padding:22px 20px;
+  font-size:13px;color:#a9bccf;
   display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between;
 }
 footer.site a{color:#dbe5ef}
 
 /* ニュースまとめ */
 .edition-head{
-  margin:0 0 6px;font-size:26px;font-weight:800;line-height:1.5;
-  border-bottom:3px solid var(--navy);padding-bottom:10px;
+  margin:0 0 6px;font-size:25px;font-weight:800;line-height:1.55;letter-spacing:.02em;
+  border-bottom:2px solid var(--navy);padding-bottom:11px;
 }
 .edition-meta{color:var(--muted);font-size:13px;margin:0 0 16px}
-.news-item{border-top:2px solid var(--line);padding:16px 0 6px}
+.news-item{border-top:1px solid var(--line);padding:16px 0 6px}
 .news-item:first-of-type{border-top:none;padding-top:4px}
 .news-item h3{margin:0 0 6px;font-size:16.5px;line-height:1.6}
 .news-item p{margin:0 0 8px}
 .news-item .hitokoto{
-  background:var(--navy-tint);border-left:5px solid var(--red);
+  background:var(--navy-tint);border-left:3px solid var(--red);
   border-radius:0 8px 8px 0;padding:9px 13px;
   font-size:14.5px;margin:0 0 10px;
 }
@@ -140,17 +139,17 @@ footer.site a{color:#dbe5ef}
 .tag-list{margin:10px 0 4px;line-height:2.1}
 .tag-chip{
   display:inline-block;margin:0 6px 6px 0;padding:2px 12px;border-radius:999px;
-  border:1.5px solid var(--navy);background:#fff;color:var(--navy);
-  font-size:13px;font-weight:700;text-decoration:none;
+  border:1px solid #b9c7d4;background:#fff;color:var(--navy);
+  font-size:13px;font-weight:600;text-decoration:none;
 }
-.tag-chip:hover{background:var(--navy);color:#fff;text-decoration:none}
+.tag-chip:hover{background:var(--navy-tint);color:var(--navy);text-decoration:none}
 .reactions{margin:0 0 8px;line-height:1.9}
 
 /* 反応グラフ */
 .rstats{margin:6px 0 12px}
 .rbar{display:flex;align-items:center;gap:10px;margin:6px 0}
 .rbar-label{flex:0 0 7.5em;font-size:14px}
-.rbar-track{flex:1;background:var(--line);border-radius:999px;height:12px;overflow:hidden}
+.rbar-track{flex:1;background:var(--line);border-radius:999px;height:10px;overflow:hidden}
 .rbar-fill{display:block;height:100%;background:linear-gradient(90deg, var(--navy-2), var(--red));border-radius:999px}
 .rbar-pct{flex:0 0 3em;text-align:right;font-size:14px;font-weight:700}
 
@@ -160,7 +159,7 @@ footer.site a{color:#dbe5ef}
   display:inline-block;padding:9px 18px;border-radius:999px;
   background:var(--red);border:none;
   color:#fff;font-weight:700;text-decoration:none;font-size:15px;
-  box-shadow:3px 3px 0 rgba(13,33,55,.85);
+  box-shadow:0 4px 12px rgba(194,58,50,.28);
 }
 .comment-jump a:hover{color:#fff;text-decoration:underline}
 .comments-card{padding-bottom:20px}
@@ -177,25 +176,26 @@ footer.site a{color:#dbe5ef}
 }
 .waline-comment-count{font-weight:700}
 
-/* 人気ランキング：スコアボード風 */
+/* 人気ランキング */
 .rank-list{list-style:none;margin:0;padding:0}
 .rank-list li{display:flex;align-items:baseline;gap:9px;padding:7px 0;border-bottom:1px dashed var(--line)}
 .rank-list li:last-child{border-bottom:none}
 .rank-num{
   display:inline-block;flex:none;width:24px;height:24px;line-height:24px;text-align:center;
-  border-radius:5px;background:var(--navy-2);color:#fff;font-weight:800;font-size:13.5px;
+  border-radius:50%;background:#8496a9;color:#fff;font-weight:700;font-size:13px;
 }
-.rank-num.rank-1{background:var(--red);color:#fff}
-.rank-num.rank-2{background:var(--navy);color:#fff}
-.rank-num.rank-3{background:#40648c;color:#fff}
+.rank-num.rank-1{background:var(--gold);color:#fff}
+.rank-num.rank-2{background:#a7b4c0;color:#fff}
+.rank-num.rank-3{background:#c08a5a;color:#fff}
 .rank-pv{flex:none;margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
 .pv-note{font-size:13px;color:var(--muted)}
 
 /* ランキングのタブ切り替え */
-.rank-tabs{display:flex;gap:8px;margin-bottom:10px}
+.rank-tabs{display:flex;gap:8px;margin-bottom:12px}
 .rank-tab{
-  flex:1;padding:9px 0;border:2px solid var(--navy);border-radius:8px;
-  background:#fff;color:var(--navy);font-size:14px;font-weight:800;cursor:pointer;letter-spacing:.06em;
+  flex:1;padding:8px 0;border:1px solid #b9c7d4;border-radius:999px;
+  background:#fff;color:var(--navy);font-size:13.5px;font-weight:700;cursor:pointer;letter-spacing:.06em;
+  transition:background .15s, color .15s;
 }
-.rank-tab.active{background:var(--navy);color:#fff}
+.rank-tab.active{background:var(--navy);border-color:var(--navy);color:#fff}
 .rank-panel[hidden]{display:none}
