@@ -58,12 +58,13 @@ main{max-width:920px;margin:0 auto;padding:32px 20px 60px}
   padding:40px 32px;margin-bottom:30px;color:#fff;
   box-shadow:0 12px 28px rgba(18,40,63,.22);
 }
-.hero::after{
-  content:"";position:absolute;right:-80px;top:-80px;
-  width:260px;height:260px;border-radius:50%;
-  background:radial-gradient(circle at 35% 35%, #ffffff 0%, #dfe6ec 78%);
-  border:3px dashed rgba(194,58,50,.45);
-  opacity:.09;pointer-events:none;
+.hero-paguo{
+  position:absolute;right:26px;bottom:2px;width:196px;height:auto;
+  pointer-events:none;
+}
+@media (max-width:640px){
+  .hero-paguo{width:128px;right:12px;opacity:.92}
+  .hero{padding:30px 22px}
 }
 .hero h1{
   margin:0 0 12px;font-size:29px;font-weight:800;line-height:1.5;letter-spacing:.05em;
