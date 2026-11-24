@@ -141,3 +141,9 @@ footer.site a{color:var(--muted)}
 .rank-num.rank-3{background:#e6b98a;color:#5c3a00}
 .rank-pv{flex:none;margin-left:auto;font-size:12px;color:#888;white-space:nowrap}
 .pv-note{font-size:13px;color:#888}
+
+/* ランキングのタブ切り替え（2026-11-24 追加） */
+.rank-tabs{display:flex;gap:8px;margin-bottom:10px}
+.rank-tab{flex:1;padding:9px 0;border:1px solid #d8cf9f;border-radius:999px;background:#fffdf2;color:#7a5c1e;font-size:14px;font-weight:bold;cursor:pointer}
+.rank-tab.active{background:#f0c85a;border-color:#f0c85a;color:#5c4300}
+.rank-panel[hidden]{display:none}

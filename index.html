@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://baseball.pug-o.jp/">
 <meta property="og:image" content="https://baseball.pug-o.jp/images/ogp-v2.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=20261124">
+<link rel="stylesheet" href="style.css?v=20261124b">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-669BYPTSKL"></script>
 <script>
@@ -66,39 +66,51 @@
   <section class="card">
     <h2>人気ニュースランキング</h2>
     <!--RANKING_START-->
-    <div class="rank-grid">
-      <div class="rank-col">
-        <h3>本日の人気</h3>
-        <ol class="rank-list">
+    <div class="rank-tabs">
+      <button type="button" class="rank-tab active" data-rank-tab="day">本日</button>
+      <button type="button" class="rank-tab" data-rank-tab="week">今週</button>
+      <button type="button" class="rank-tab" data-rank-tab="month">今月</button>
+    </div>
+    <div class="rank-panel" data-rank-panel="day">
+      <ol class="rank-list">
       <li><span class="rank-num rank-1">1</span><a href="news/2026-11-24-nipponham-hosokawa-pay-raise.html">日本ハム・細川凌平がアップ更改　智弁和歌山の先輩・楽天黒川と合同トレ、伊江島組にも合流へ</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-2">2</span><a href="news/2026-11-24-nipponham-asama-pay-cut.html">日本ハム・浅間大基がダウン更改　再び「近藤塾」へ、徳之島で勝負の13年目へのヒント探る</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-3">3</span><a href="news/2026-11-24-nipponham-kamikawabata-pay-cut.html">日本ハム・上川畑大悟がダウン更改　来季30歳、「もう1年1年が勝負」ショートのスタメンを狙う</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-4">4</span><a href="news/2026-11-24-nipponham-saito-yukiya-pay-cut.html">日本ハム・斎藤友貴哉がダウン更改も「モチベーションはすごい上がってる」　走り方改革で来季の逆襲へ</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-5">5</span><a href="news/2026-11-24-softbank-otake-fuga-2027.html">ソフトバンク・大竹風雅が100万円増の700万円で更改　守護神・杉山一樹に弟子入り、いずれは抑えへ</a><span class="rank-pv">👁 0</span></li>
-        </ol>
-      </div>
-      <div class="rank-col">
-        <h3>今週の人気</h3>
-        <ol class="rank-list">
+      </ol>
+    </div>
+    <div class="rank-panel" data-rank-panel="week" hidden>
+      <ol class="rank-list">
       <li><span class="rank-num rank-1">1</span><a href="news/2026-11-24-nipponham-hosokawa-pay-raise.html">日本ハム・細川凌平がアップ更改　智弁和歌山の先輩・楽天黒川と合同トレ、伊江島組にも合流へ</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-2">2</span><a href="news/2026-11-24-nipponham-asama-pay-cut.html">日本ハム・浅間大基がダウン更改　再び「近藤塾」へ、徳之島で勝負の13年目へのヒント探る</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-3">3</span><a href="news/2026-11-24-nipponham-kamikawabata-pay-cut.html">日本ハム・上川畑大悟がダウン更改　来季30歳、「もう1年1年が勝負」ショートのスタメンを狙う</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-4">4</span><a href="news/2026-11-24-nipponham-saito-yukiya-pay-cut.html">日本ハム・斎藤友貴哉がダウン更改も「モチベーションはすごい上がってる」　走り方改革で来季の逆襲へ</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-5">5</span><a href="news/2026-11-24-softbank-otake-fuga-2027.html">ソフトバンク・大竹風雅が100万円増の700万円で更改　守護神・杉山一樹に弟子入り、いずれは抑えへ</a><span class="rank-pv">👁 0</span></li>
-        </ol>
-      </div>
-      <div class="rank-col">
-        <h3>今月の人気</h3>
-        <ol class="rank-list">
+      </ol>
+    </div>
+    <div class="rank-panel" data-rank-panel="month" hidden>
+      <ol class="rank-list">
       <li><span class="rank-num rank-1">1</span><a href="news/2026-11-24-nipponham-hosokawa-pay-raise.html">日本ハム・細川凌平がアップ更改　智弁和歌山の先輩・楽天黒川と合同トレ、伊江島組にも合流へ</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-2">2</span><a href="news/2026-11-24-nipponham-asama-pay-cut.html">日本ハム・浅間大基がダウン更改　再び「近藤塾」へ、徳之島で勝負の13年目へのヒント探る</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-3">3</span><a href="news/2026-11-24-nipponham-kamikawabata-pay-cut.html">日本ハム・上川畑大悟がダウン更改　来季30歳、「もう1年1年が勝負」ショートのスタメンを狙う</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-4">4</span><a href="news/2026-11-24-nipponham-saito-yukiya-pay-cut.html">日本ハム・斎藤友貴哉がダウン更改も「モチベーションはすごい上がってる」　走り方改革で来季の逆襲へ</a><span class="rank-pv">👁 0</span></li>
       <li><span class="rank-num rank-5">5</span><a href="news/2026-11-24-softbank-otake-fuga-2027.html">ソフトバンク・大竹風雅が100万円増の700万円で更改　守護神・杉山一樹に弟子入り、いずれは抑えへ</a><span class="rank-pv">👁 0</span></li>
-        </ol>
-      </div>
+      </ol>
     </div>
     <p class="muted">読まれた回数（PV）をもとに集計し、ニュース更新のたびに（1時間ごと）並べ替えています。</p>
+    <script>
+      (function () {
+        var tabs = document.querySelectorAll('[data-rank-tab]');
+        var panels = document.querySelectorAll('[data-rank-panel]');
+        tabs.forEach(function (t) {
+          t.addEventListener('click', function () {
+            tabs.forEach(function (x) { x.classList.toggle('active', x === t); });
+            panels.forEach(function (p) { p.hidden = p.getAttribute('data-rank-panel') !== t.getAttribute('data-rank-tab'); });
+          });
+        });
+      })();
+    </script>
     <!--RANKING_END-->
   </section>
 
