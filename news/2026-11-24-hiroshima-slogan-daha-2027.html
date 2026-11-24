@@ -16,7 +16,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "広島、来季キャッチフレーズは「DAHA」　4年続いた「しゃ」から一新", "description": "広島は23日、マツダスタジアムでのファン感謝デーで、来季のキャッチフレーズ「DAHA」を発表した。選手会長の島内颯太郎投手が「DAHA」のボードを掲げてお披露目した。球団によると、一人一人が自らの限界や目の前に立ちはだか", "datePublished": "2026-11-24T10:00:00+09:00", "image": ["https://baseball.pug-o.jp/images/ogp-v5.png"], "author": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "publisher": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "mainEntityOfPage": "https://baseball.pug-o.jp/news/2026-11-24-hiroshima-slogan-daha-2027.html"}</script>
 <meta property="og:image" content="https://baseball.pug-o.jp/images/ogp-v5.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="../style.css?v=20261124e">
+<link rel="stylesheet" href="../style.css?v=20261125a">
 <link rel="icon" type="image/png" href="../images/favicon.png">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <!-- Google tag (gtag.js) -->
@@ -52,13 +52,13 @@
       <p class="src">出典：<a href="https://www.nikkansports.com/baseball/news/202611230001584.html" target="_blank" rel="noopener">日刊スポーツ</a>／<a href="https://news.yahoo.co.jp/articles/0d2f7252c429d3c25ccae864a666c49a29fd2c5c" target="_blank" rel="noopener">スポーツ報知</a>（要約は自分の言葉で書いています。詳しくは出典元をご覧ください）</p>
     </div>
     <p class="tag-list"><a class="tag-chip" href="../tags/広島.html">#広島</a> <a class="tag-chip" href="../tags/DAHA.html">#DAHA</a> <a class="tag-chip" href="../tags/キャッチフレーズ.html">#キャッチフレーズ</a> <a class="tag-chip" href="../tags/新井貴浩.html">#新井貴浩</a></p>
-    <p class="comment-jump"><a href="#comments">💬 コメント（<span class="waline-comment-count" data-path="/news/2026-11-24-hiroshima-slogan-daha-2027.html">0</span>件）を見る・書く ↓</a> <span class="pv-note">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-24-hiroshima-slogan-daha-2027.html">0</span>回読まれています）</span></p>
+    <p class="comment-jump"><a href="#comments">💬 コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-24-hiroshima-slogan-daha-2027.html">0</span>件）</span>を見る・書く ↓</a> <span class="pv-note count-guard" data-kind="pv">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-24-hiroshima-slogan-daha-2027.html">0</span>回読まれています）</span></p>
     <p class="share-row"><a class="share-x" href="https://x.com/intent/post?text=%E5%BA%83%E5%B3%B6%E3%80%81%E6%9D%A5%E5%AD%A3%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81%E3%83%95%E3%83%AC%E3%83%BC%E3%82%BA%E3%81%AF%E3%80%8CDAHA%E3%80%8D%E3%80%804%E5%B9%B4%E7%B6%9A%E3%81%84%E3%81%9F%E3%80%8C%E3%81%97%E3%82%83%E3%80%8D%E3%81%8B%E3%82%89%E4%B8%80%E6%96%B0&url=https%3A//baseball.pug-o.jp/news/2026-11-24-hiroshima-slogan-daha-2027.html" target="_blank" rel="noopener">Xでシェアする</a></p>
   </section>
 
 
   <section class="card comments-card" id="comments">
-    <h2>コメント（<span class="waline-comment-count" data-path="/news/2026-11-24-hiroshima-slogan-daha-2027.html">0</span>件）</h2>
+    <h2>コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-24-hiroshima-slogan-daha-2027.html">0</span>件）</span></h2>
     <p class="comment-note">本文だけ書けば、そのまま表示されます。みんなでワイワイ語りましょう。個人情報は書かないでください。</p>
     <div id="waline"></div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css">
@@ -79,6 +79,25 @@
         pageview: true,
       });
       commentCount({ serverURL: 'https://paguo-waline.vercel.app' });
+    </script>
+    <script>
+      (function () {
+        var TH = { comment: 3, pv: 10 };
+        function num(el) { var t = (el.textContent || "").replace(/[^0-9]/g, ""); return t ? parseInt(t, 10) : 0; }
+        function check() {
+          var pending = false;
+          document.querySelectorAll(".count-guard").forEach(function (g) {
+            if (g.classList.contains("show")) return;
+            var inner = g.querySelector(".waline-comment-count, .waline-pageview-count");
+            if (!inner) { g.classList.add("show"); return; }
+            var kind = g.getAttribute("data-kind") || "comment";
+            if (num(inner) >= (TH[kind] || 3)) { g.classList.add("show"); } else { pending = true; }
+          });
+          return pending;
+        }
+        var n = 0;
+        var iv = setInterval(function () { n++; if (!check() || n > 24) clearInterval(iv); }, 500);
+      })();
     </script>
   </section>
 

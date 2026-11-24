@@ -15,7 +15,7 @@
 <link rel="alternate" type="application/rss+xml" title="飼い主の野球コメントスタジアム 新着ニュース" href="https://baseball.pug-o.jp/feed.xml">
 <meta property="og:image" content="https://baseball.pug-o.jp/images/ogp-v5.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="../style.css?v=20261124e">
+<link rel="stylesheet" href="../style.css?v=20261125a">
 <link rel="icon" type="image/png" href="../images/favicon.png">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <!-- Google tag (gtag.js) -->
@@ -42,7 +42,7 @@
   <section class="card">
     <h1 class="edition-head">#自由契約 のニュース</h1>
     <ul class="archive-list">
-      <li><a href="../news/2026-11-23-chunichi-muller-freeagent.html">中日・マラーが自由契約に</a>（2026年11月23日（月・祝） 夕方／コメント<span class="waline-comment-count" data-path="/news/2026-11-23-chunichi-muller-freeagent.html">0</span>件）</li>
+      <li><a href="../news/2026-11-23-chunichi-muller-freeagent.html">中日・マラーが自由契約に</a>（2026年11月23日（月・祝） 夕方／<span class="count-guard" data-kind="comment">コメント<span class="waline-comment-count" data-path="/news/2026-11-23-chunichi-muller-freeagent.html">0</span>件</span>）</li>
     </ul>
     <p><a href="../news/">野球ニュースまとめの一覧へ →</a></p>
   </section>
@@ -50,6 +50,25 @@
     <script type="module">
       import { commentCount } from 'https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.js';
       commentCount({ serverURL: 'https://paguo-waline.vercel.app' });
+    </script>
+    <script>
+      (function () {
+        var TH = { comment: 3, pv: 10 };
+        function num(el) { var t = (el.textContent || "").replace(/[^0-9]/g, ""); return t ? parseInt(t, 10) : 0; }
+        function check() {
+          var pending = false;
+          document.querySelectorAll(".count-guard").forEach(function (g) {
+            if (g.classList.contains("show")) return;
+            var inner = g.querySelector(".waline-comment-count, .waline-pageview-count");
+            if (!inner) { g.classList.add("show"); return; }
+            var kind = g.getAttribute("data-kind") || "comment";
+            if (num(inner) >= (TH[kind] || 3)) { g.classList.add("show"); } else { pending = true; }
+          });
+          return pending;
+        }
+        var n = 0;
+        var iv = setInterval(function () { n++; if (!check() || n > 24) clearInterval(iv); }, 500);
+      })();
     </script>
 </main>
 <footer class="site">

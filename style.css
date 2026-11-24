@@ -209,3 +209,7 @@ footer.site a{color:#dbe5ef}
   font-weight:700;text-decoration:none;font-size:14px;letter-spacing:.04em;
 }
 .share-x:hover{background:var(--navy);color:#fff}
+
+/* count guards (2026-11-25): hide small counts until they grow */
+.count-guard{display:none}
+.count-guard.show{display:inline}

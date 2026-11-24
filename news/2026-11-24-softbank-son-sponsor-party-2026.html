@@ -16,7 +16,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "ソフトバンク孫オーナー、2年連続日本一にご満悦　スポンサーパーティーで来季の頂点維持に期待", "description": "ソフトバンクは24日、福岡市内のホテルでスポンサーパーティーを開いた。王貞治球団会長や小久保裕紀監督、柳田悠岐、周東佑京らが出席し、孫正義オーナー（69）はビデオメッセージで登場した。リーグ3連覇と2年連続日本一について", "datePublished": "2026-11-24T22:00:00+09:00", "image": ["https://baseball.pug-o.jp/images/ogp-v5.png"], "author": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "publisher": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "mainEntityOfPage": "https://baseball.pug-o.jp/news/2026-11-24-softbank-son-sponsor-party-2026.html"}</script>
 <meta property="og:image" content="https://baseball.pug-o.jp/images/ogp-v5.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="../style.css?v=20261124e">
+<link rel="stylesheet" href="../style.css?v=20261125a">
 <link rel="icon" type="image/png" href="../images/favicon.png">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <!-- Google tag (gtag.js) -->
@@ -52,13 +52,13 @@
       <p class="src">出典：<a href="https://news.yahoo.co.jp/articles/738a251513c00e2377556bdf15d81d4954114eec" target="_blank" rel="noopener">日刊スポーツ</a>／<a href="https://sportsbull.jp/p/2463915/" target="_blank" rel="noopener">スポーツブル</a>（要約は自分の言葉で書いています。詳しくは出典元をご覧ください）</p>
     </div>
     <p class="tag-list"><a class="tag-chip" href="../tags/ソフトバンク.html">#ソフトバンク</a> <a class="tag-chip" href="../tags/孫正義.html">#孫正義</a> <a class="tag-chip" href="../tags/日本一.html">#日本一</a> <a class="tag-chip" href="../tags/スポンサーパーティー.html">#スポンサーパーティー</a></p>
-    <p class="comment-jump"><a href="#comments">💬 コメント（<span class="waline-comment-count" data-path="/news/2026-11-24-softbank-son-sponsor-party-2026.html">0</span>件）を見る・書く ↓</a> <span class="pv-note">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-24-softbank-son-sponsor-party-2026.html">0</span>回読まれています）</span></p>
+    <p class="comment-jump"><a href="#comments">💬 コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-24-softbank-son-sponsor-party-2026.html">0</span>件）</span>を見る・書く ↓</a> <span class="pv-note count-guard" data-kind="pv">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-24-softbank-son-sponsor-party-2026.html">0</span>回読まれています）</span></p>
     <p class="share-row"><a class="share-x" href="https://x.com/intent/post?text=%E3%82%BD%E3%83%95%E3%83%88%E3%83%90%E3%83%B3%E3%82%AF%E5%AD%AB%E3%82%AA%E3%83%BC%E3%83%8A%E3%83%BC%E3%80%812%E5%B9%B4%E9%80%A3%E7%B6%9A%E6%97%A5%E6%9C%AC%E4%B8%80%E3%81%AB%E3%81%94%E6%BA%80%E6%82%A6%E3%80%80%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%81%A7%E6%9D%A5%E5%AD%A3%E3%81%AE%E9%A0%82%E7%82%B9%E7%B6%AD%E6%8C%81%E3%81%AB%E6%9C%9F%E5%BE%85&url=https%3A//baseball.pug-o.jp/news/2026-11-24-softbank-son-sponsor-party-2026.html" target="_blank" rel="noopener">Xでシェアする</a></p>
   </section>
 
 
   <section class="card comments-card" id="comments">
-    <h2>コメント（<span class="waline-comment-count" data-path="/news/2026-11-24-softbank-son-sponsor-party-2026.html">0</span>件）</h2>
+    <h2>コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-24-softbank-son-sponsor-party-2026.html">0</span>件）</span></h2>
     <p class="comment-note">本文だけ書けば、そのまま表示されます。みんなでワイワイ語りましょう。個人情報は書かないでください。</p>
     <div id="waline"></div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css">
@@ -79,6 +79,25 @@
         pageview: true,
       });
       commentCount({ serverURL: 'https://paguo-waline.vercel.app' });
+    </script>
+    <script>
+      (function () {
+        var TH = { comment: 3, pv: 10 };
+        function num(el) { var t = (el.textContent || "").replace(/[^0-9]/g, ""); return t ? parseInt(t, 10) : 0; }
+        function check() {
+          var pending = false;
+          document.querySelectorAll(".count-guard").forEach(function (g) {
+            if (g.classList.contains("show")) return;
+            var inner = g.querySelector(".waline-comment-count, .waline-pageview-count");
+            if (!inner) { g.classList.add("show"); return; }
+            var kind = g.getAttribute("data-kind") || "comment";
+            if (num(inner) >= (TH[kind] || 3)) { g.classList.add("show"); } else { pending = true; }
+          });
+          return pending;
+        }
+        var n = 0;
+        var iv = setInterval(function () { n++; if (!check() || n > 24) clearInterval(iv); }, 500);
+      })();
     </script>
   </section>
 

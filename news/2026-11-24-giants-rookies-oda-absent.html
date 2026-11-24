@@ -16,7 +16,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "巨人の新入団発表、ドラフト1位・織田翔希は不在　10選手がお披露目", "description": "巨人は23日、東京ドームのファンフェスタで新入団選手発表を行った。ドラフト2位の平田玲翔投手ら支配下5人と育成5人の計10選手がユニホーム姿で登場し、決意を語った。一方、米球界挑戦を表明しているドラフト1位の横浜高・織田", "datePublished": "2026-11-24T02:00:00+09:00", "image": ["https://baseball.pug-o.jp/images/ogp-v5.png"], "author": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "publisher": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "mainEntityOfPage": "https://baseball.pug-o.jp/news/2026-11-24-giants-rookies-oda-absent.html"}</script>
 <meta property="og:image" content="https://baseball.pug-o.jp/images/ogp-v5.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="../style.css?v=20261124e">
+<link rel="stylesheet" href="../style.css?v=20261125a">
 <link rel="icon" type="image/png" href="../images/favicon.png">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <!-- Google tag (gtag.js) -->
@@ -52,7 +52,7 @@
       <p class="src">出典：<a href="https://www.nikkansports.com/baseball/news/202611230001918.html" target="_blank" rel="noopener">日刊スポーツ</a>／<a href="https://www.sanspo.com/article/20261123-ETCQWONJWNEXTGZO6BG6HVMPPE/?outputType=theme_giants" target="_blank" rel="noopener">サンスポ</a>（要約は自分の言葉で書いています。詳しくは出典元をご覧ください）</p>
     </div>
     <p class="tag-list"><a class="tag-chip" href="../tags/巨人.html">#巨人</a> <a class="tag-chip" href="../tags/織田翔希.html">#織田翔希</a> <a class="tag-chip" href="../tags/ドラフト.html">#ドラフト</a> <a class="tag-chip" href="../tags/新入団発表.html">#新入団発表</a> <a class="tag-chip" href="../tags/関蓮太郎.html">#関蓮太郎</a></p>
-    <p class="comment-jump"><a href="#comments">💬 コメント（<span class="waline-comment-count" data-path="/news/2026-11-24-giants-rookies-oda-absent.html">0</span>件）を見る・書く ↓</a> <span class="pv-note">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-24-giants-rookies-oda-absent.html">0</span>回読まれています）</span></p>
+    <p class="comment-jump"><a href="#comments">💬 コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-24-giants-rookies-oda-absent.html">0</span>件）</span>を見る・書く ↓</a> <span class="pv-note count-guard" data-kind="pv">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-24-giants-rookies-oda-absent.html">0</span>回読まれています）</span></p>
     <p class="share-row"><a class="share-x" href="https://x.com/intent/post?text=%E5%B7%A8%E4%BA%BA%E3%81%AE%E6%96%B0%E5%85%A5%E5%9B%A3%E7%99%BA%E8%A1%A8%E3%80%81%E3%83%89%E3%83%A9%E3%83%95%E3%83%881%E4%BD%8D%E3%83%BB%E7%B9%94%E7%94%B0%E7%BF%94%E5%B8%8C%E3%81%AF%E4%B8%8D%E5%9C%A8%E3%80%8010%E9%81%B8%E6%89%8B%E3%81%8C%E3%81%8A%E6%8A%AB%E9%9C%B2%E7%9B%AE&url=https%3A//baseball.pug-o.jp/news/2026-11-24-giants-rookies-oda-absent.html" target="_blank" rel="noopener">Xでシェアする</a></p>
   </section>
 
@@ -63,7 +63,7 @@
   </section>
 
   <section class="card comments-card" id="comments">
-    <h2>コメント（<span class="waline-comment-count" data-path="/news/2026-11-24-giants-rookies-oda-absent.html">0</span>件）</h2>
+    <h2>コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-24-giants-rookies-oda-absent.html">0</span>件）</span></h2>
     <p class="comment-note">本文だけ書けば、そのまま表示されます。みんなでワイワイ語りましょう。個人情報は書かないでください。</p>
     <div id="waline"></div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css">
@@ -84,6 +84,25 @@
         pageview: true,
       });
       commentCount({ serverURL: 'https://paguo-waline.vercel.app' });
+    </script>
+    <script>
+      (function () {
+        var TH = { comment: 3, pv: 10 };
+        function num(el) { var t = (el.textContent || "").replace(/[^0-9]/g, ""); return t ? parseInt(t, 10) : 0; }
+        function check() {
+          var pending = false;
+          document.querySelectorAll(".count-guard").forEach(function (g) {
+            if (g.classList.contains("show")) return;
+            var inner = g.querySelector(".waline-comment-count, .waline-pageview-count");
+            if (!inner) { g.classList.add("show"); return; }
+            var kind = g.getAttribute("data-kind") || "comment";
+            if (num(inner) >= (TH[kind] || 3)) { g.classList.add("show"); } else { pending = true; }
+          });
+          return pending;
+        }
+        var n = 0;
+        var iv = setInterval(function () { n++; if (!check() || n > 24) clearInterval(iv); }, 500);
+      })();
     </script>
   </section>
 

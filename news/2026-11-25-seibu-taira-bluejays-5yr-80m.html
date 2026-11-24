@@ -16,7 +16,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "平良海馬、ブルージェイズと5年総額127億円で合意　岡本和真と同僚に", "description": "西武からポスティングシステムでメジャー移籍を目指す平良海馬投手（27）が、ブルージェイズと5年総額8000万ドル（約127億円）で契約に合意したと、米メディアが報じた。契約には500万ドルの契約金と、3年後の2029年シ", "datePublished": "2026-11-25T06:00:00+09:00", "image": ["https://baseball.pug-o.jp/images/ogp-v5.png"], "author": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "publisher": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "mainEntityOfPage": "https://baseball.pug-o.jp/news/2026-11-25-seibu-taira-bluejays-5yr-80m.html"}</script>
 <meta property="og:image" content="https://baseball.pug-o.jp/images/ogp-v5.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="../style.css?v=20261124e">
+<link rel="stylesheet" href="../style.css?v=20261125a">
 <link rel="icon" type="image/png" href="../images/favicon.png">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <!-- Google tag (gtag.js) -->
@@ -52,7 +52,7 @@
       <p class="src">出典：<a href="https://www.chunichi.co.jp/article/1344249" target="_blank" rel="noopener">中日スポーツ</a>／<a href="https://nypost.com/2026/11/24/sports/blue-jays-land-japanese-star-pitcher-kaima-taira-on-80m-deal/" target="_blank" rel="noopener">New York Post</a>（要約は自分の言葉で書いています。詳しくは出典元をご覧ください）</p>
     </div>
     <p class="tag-list"><a class="tag-chip" href="../tags/西武.html">#西武</a> <a class="tag-chip" href="../tags/平良海馬.html">#平良海馬</a> <a class="tag-chip" href="../tags/ブルージェイズ.html">#ブルージェイズ</a> <a class="tag-chip" href="../tags/ポスティング.html">#ポスティング</a> <a class="tag-chip" href="../tags/MLB.html">#MLB</a></p>
-    <p class="comment-jump"><a href="#comments">💬 コメント（<span class="waline-comment-count" data-path="/news/2026-11-25-seibu-taira-bluejays-5yr-80m.html">0</span>件）を見る・書く ↓</a> <span class="pv-note">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-25-seibu-taira-bluejays-5yr-80m.html">0</span>回読まれています）</span></p>
+    <p class="comment-jump"><a href="#comments">💬 コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-25-seibu-taira-bluejays-5yr-80m.html">0</span>件）</span>を見る・書く ↓</a> <span class="pv-note count-guard" data-kind="pv">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-25-seibu-taira-bluejays-5yr-80m.html">0</span>回読まれています）</span></p>
     <p class="share-row"><a class="share-x" href="https://x.com/intent/post?text=%E5%B9%B3%E8%89%AF%E6%B5%B7%E9%A6%AC%E3%80%81%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B8%E3%82%A7%E3%82%A4%E3%82%BA%E3%81%A85%E5%B9%B4%E7%B7%8F%E9%A1%8D127%E5%84%84%E5%86%86%E3%81%A7%E5%90%88%E6%84%8F%E3%80%80%E5%B2%A1%E6%9C%AC%E5%92%8C%E7%9C%9F%E3%81%A8%E5%90%8C%E5%83%9A%E3%81%AB&url=https%3A//baseball.pug-o.jp/news/2026-11-25-seibu-taira-bluejays-5yr-80m.html" target="_blank" rel="noopener">Xでシェアする</a></p>
   </section>
 
@@ -63,7 +63,7 @@
   </section>
 
   <section class="card comments-card" id="comments">
-    <h2>コメント（<span class="waline-comment-count" data-path="/news/2026-11-25-seibu-taira-bluejays-5yr-80m.html">0</span>件）</h2>
+    <h2>コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-25-seibu-taira-bluejays-5yr-80m.html">0</span>件）</span></h2>
     <p class="comment-note">本文だけ書けば、そのまま表示されます。みんなでワイワイ語りましょう。個人情報は書かないでください。</p>
     <div id="waline"></div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css">
@@ -84,6 +84,25 @@
         pageview: true,
       });
       commentCount({ serverURL: 'https://paguo-waline.vercel.app' });
+    </script>
+    <script>
+      (function () {
+        var TH = { comment: 3, pv: 10 };
+        function num(el) { var t = (el.textContent || "").replace(/[^0-9]/g, ""); return t ? parseInt(t, 10) : 0; }
+        function check() {
+          var pending = false;
+          document.querySelectorAll(".count-guard").forEach(function (g) {
+            if (g.classList.contains("show")) return;
+            var inner = g.querySelector(".waline-comment-count, .waline-pageview-count");
+            if (!inner) { g.classList.add("show"); return; }
+            var kind = g.getAttribute("data-kind") || "comment";
+            if (num(inner) >= (TH[kind] || 3)) { g.classList.add("show"); } else { pending = true; }
+          });
+          return pending;
+        }
+        var n = 0;
+        var iv = setInterval(function () { n++; if (!check() || n > 24) clearInterval(iv); }, 500);
+      })();
     </script>
   </section>
 

@@ -16,7 +16,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "DeNA、楽天FAの太田光獲りへ参戦　広島と三つどもえ、宗に続けば15年ぶりのFAダブル獲得", "description": "DeNAが、楽天から国内FA権を行使している太田光捕手（30）の獲得に乗り出す見通しとなった。広島が交渉解禁初日の11日に仙台で初交渉を終えているが、DeNAも水面下で動向を調査してきたという。太田は今季100試合に出場", "datePublished": "2026-11-25T03:00:00+09:00", "image": ["https://baseball.pug-o.jp/images/ogp-v5.png"], "author": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "publisher": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "mainEntityOfPage": "https://baseball.pug-o.jp/news/2026-11-25-dena-ohta-hikaru-fa-sansen.html"}</script>
 <meta property="og:image" content="https://baseball.pug-o.jp/images/ogp-v5.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="../style.css?v=20261124e">
+<link rel="stylesheet" href="../style.css?v=20261125a">
 <link rel="icon" type="image/png" href="../images/favicon.png">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <!-- Google tag (gtag.js) -->
@@ -52,7 +52,7 @@
       <p class="src">出典：<a href="https://news.yahoo.co.jp/articles/d106c6b161e790a6a974639a5bbd827dbba52b5a" target="_blank" rel="noopener">スポーツ報知</a>（要約は自分の言葉で書いています。詳しくは出典元をご覧ください）</p>
     </div>
     <p class="tag-list"><a class="tag-chip" href="../tags/DeNA.html">#DeNA</a> <a class="tag-chip" href="../tags/太田光.html">#太田光</a> <a class="tag-chip" href="../tags/FA.html">#FA</a> <a class="tag-chip" href="../tags/広島.html">#広島</a> <a class="tag-chip" href="../tags/楽天.html">#楽天</a></p>
-    <p class="comment-jump"><a href="#comments">💬 コメント（<span class="waline-comment-count" data-path="/news/2026-11-25-dena-ohta-hikaru-fa-sansen.html">0</span>件）を見る・書く ↓</a> <span class="pv-note">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-25-dena-ohta-hikaru-fa-sansen.html">0</span>回読まれています）</span></p>
+    <p class="comment-jump"><a href="#comments">💬 コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-25-dena-ohta-hikaru-fa-sansen.html">0</span>件）</span>を見る・書く ↓</a> <span class="pv-note count-guard" data-kind="pv">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-25-dena-ohta-hikaru-fa-sansen.html">0</span>回読まれています）</span></p>
     <p class="share-row"><a class="share-x" href="https://x.com/intent/post?text=DeNA%E3%80%81%E6%A5%BD%E5%A4%A9FA%E3%81%AE%E5%A4%AA%E7%94%B0%E5%85%89%E7%8D%B2%E3%82%8A%E3%81%B8%E5%8F%82%E6%88%A6%E3%80%80%E5%BA%83%E5%B3%B6%E3%81%A8%E4%B8%89%E3%81%A4%E3%81%A9%E3%82%82%E3%81%88%E3%80%81%E5%AE%97%E3%81%AB%E7%B6%9A%E3%81%91%E3%81%B015%E5%B9%B4%E3%81%B6%E3%82%8A%E3%81%AEFA%E3%83%80%E3%83%96%E3%83%AB%E7%8D%B2%E5%BE%97&url=https%3A//baseball.pug-o.jp/news/2026-11-25-dena-ohta-hikaru-fa-sansen.html" target="_blank" rel="noopener">Xでシェアする</a></p>
   </section>
 
@@ -63,7 +63,7 @@
   </section>
 
   <section class="card comments-card" id="comments">
-    <h2>コメント（<span class="waline-comment-count" data-path="/news/2026-11-25-dena-ohta-hikaru-fa-sansen.html">0</span>件）</h2>
+    <h2>コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-25-dena-ohta-hikaru-fa-sansen.html">0</span>件）</span></h2>
     <p class="comment-note">本文だけ書けば、そのまま表示されます。みんなでワイワイ語りましょう。個人情報は書かないでください。</p>
     <div id="waline"></div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css">
@@ -84,6 +84,25 @@
         pageview: true,
       });
       commentCount({ serverURL: 'https://paguo-waline.vercel.app' });
+    </script>
+    <script>
+      (function () {
+        var TH = { comment: 3, pv: 10 };
+        function num(el) { var t = (el.textContent || "").replace(/[^0-9]/g, ""); return t ? parseInt(t, 10) : 0; }
+        function check() {
+          var pending = false;
+          document.querySelectorAll(".count-guard").forEach(function (g) {
+            if (g.classList.contains("show")) return;
+            var inner = g.querySelector(".waline-comment-count, .waline-pageview-count");
+            if (!inner) { g.classList.add("show"); return; }
+            var kind = g.getAttribute("data-kind") || "comment";
+            if (num(inner) >= (TH[kind] || 3)) { g.classList.add("show"); } else { pending = true; }
+          });
+          return pending;
+        }
+        var n = 0;
+        var iv = setInterval(function () { n++; if (!check() || n > 24) clearInterval(iv); }, 500);
+      })();
     </script>
   </section>
 

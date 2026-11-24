@@ -16,7 +16,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "楽天・岸孝之が1億6000万円で更改　来季は球界最年長投手、通算200勝まで残り25勝", "description": "楽天の岸孝之投手が24日、契約更改交渉に臨み、2000万円減の年俸1億6000万円（推定）でサインした。プロ20年目の今季は11試合に登板し、5勝5敗、防御率2.73だった。12月4日に42歳の誕生日を迎え、来季は球界最", "datePublished": "2026-11-24T16:00:00+09:00", "image": ["https://baseball.pug-o.jp/images/ogp-v5.png"], "author": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "publisher": {"@type": "Organization", "name": "飼い主の野球コメントスタジアム", "url": "https://baseball.pug-o.jp/"}, "mainEntityOfPage": "https://baseball.pug-o.jp/news/2026-11-24-rakuten-kishi-160m-2027.html"}</script>
 <meta property="og:image" content="https://baseball.pug-o.jp/images/ogp-v5.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="../style.css?v=20261124e">
+<link rel="stylesheet" href="../style.css?v=20261125a">
 <link rel="icon" type="image/png" href="../images/favicon.png">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <!-- Google tag (gtag.js) -->
@@ -52,13 +52,13 @@
       <p class="src">出典：<a href="https://www.sanspo.com/article/20261124-PTVMGP7KNRIRLN5LYG5TBYOA3Q/?outputType=theme_goldeneagles" target="_blank" rel="noopener">サンスポ</a>／<a href="https://news.yahoo.co.jp/articles/d48f65a97019e1f4e9f08a2787c210b0da05c21b" target="_blank" rel="noopener">スポニチアネックス</a>（要約は自分の言葉で書いています。詳しくは出典元をご覧ください）</p>
     </div>
     <p class="tag-list"><a class="tag-chip" href="../tags/楽天.html">#楽天</a> <a class="tag-chip" href="../tags/岸孝之.html">#岸孝之</a> <a class="tag-chip" href="../tags/契約更改.html">#契約更改</a> <a class="tag-chip" href="../tags/最年長投手.html">#最年長投手</a> <a class="tag-chip" href="../tags/200勝.html">#200勝</a></p>
-    <p class="comment-jump"><a href="#comments">💬 コメント（<span class="waline-comment-count" data-path="/news/2026-11-24-rakuten-kishi-160m-2027.html">0</span>件）を見る・書く ↓</a> <span class="pv-note">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-24-rakuten-kishi-160m-2027.html">0</span>回読まれています）</span></p>
+    <p class="comment-jump"><a href="#comments">💬 コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-24-rakuten-kishi-160m-2027.html">0</span>件）</span>を見る・書く ↓</a> <span class="pv-note count-guard" data-kind="pv">（👁 <span class="waline-pageview-count" data-path="/news/2026-11-24-rakuten-kishi-160m-2027.html">0</span>回読まれています）</span></p>
     <p class="share-row"><a class="share-x" href="https://x.com/intent/post?text=%E6%A5%BD%E5%A4%A9%E3%83%BB%E5%B2%B8%E5%AD%9D%E4%B9%8B%E3%81%8C1%E5%84%846000%E4%B8%87%E5%86%86%E3%81%A7%E6%9B%B4%E6%94%B9%E3%80%80%E6%9D%A5%E5%AD%A3%E3%81%AF%E7%90%83%E7%95%8C%E6%9C%80%E5%B9%B4%E9%95%B7%E6%8A%95%E6%89%8B%E3%80%81%E9%80%9A%E7%AE%97200%E5%8B%9D%E3%81%BE%E3%81%A7%E6%AE%8B%E3%82%8A25%E5%8B%9D&url=https%3A//baseball.pug-o.jp/news/2026-11-24-rakuten-kishi-160m-2027.html" target="_blank" rel="noopener">Xでシェアする</a></p>
   </section>
 
 
   <section class="card comments-card" id="comments">
-    <h2>コメント（<span class="waline-comment-count" data-path="/news/2026-11-24-rakuten-kishi-160m-2027.html">0</span>件）</h2>
+    <h2>コメント<span class="count-guard" data-kind="comment">（<span class="waline-comment-count" data-path="/news/2026-11-24-rakuten-kishi-160m-2027.html">0</span>件）</span></h2>
     <p class="comment-note">本文だけ書けば、そのまま表示されます。みんなでワイワイ語りましょう。個人情報は書かないでください。</p>
     <div id="waline"></div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css">
@@ -79,6 +79,25 @@
         pageview: true,
       });
       commentCount({ serverURL: 'https://paguo-waline.vercel.app' });
+    </script>
+    <script>
+      (function () {
+        var TH = { comment: 3, pv: 10 };
+        function num(el) { var t = (el.textContent || "").replace(/[^0-9]/g, ""); return t ? parseInt(t, 10) : 0; }
+        function check() {
+          var pending = false;
+          document.querySelectorAll(".count-guard").forEach(function (g) {
+            if (g.classList.contains("show")) return;
+            var inner = g.querySelector(".waline-comment-count, .waline-pageview-count");
+            if (!inner) { g.classList.add("show"); return; }
+            var kind = g.getAttribute("data-kind") || "comment";
+            if (num(inner) >= (TH[kind] || 3)) { g.classList.add("show"); } else { pending = true; }
+          });
+          return pending;
+        }
+        var n = 0;
+        var iv = setInterval(function () { n++; if (!check() || n > 24) clearInterval(iv); }, 500);
+      })();
     </script>
   </section>
 
