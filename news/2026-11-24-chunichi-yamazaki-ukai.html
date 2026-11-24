@@ -82,21 +82,15 @@
     </script>
     <script>
       (function () {
-        var TH = { comment: 3, pv: 10 };
-        function num(el) { var t = (el.textContent || "").replace(/[^0-9]/g, ""); return t ? parseInt(t, 10) : 0; }
-        function check() {
-          var pending = false;
-          document.querySelectorAll(".count-guard").forEach(function (g) {
-            if (g.classList.contains("show")) return;
-            var inner = g.querySelector(".waline-comment-count, .waline-pageview-count");
-            if (!inner) { g.classList.add("show"); return; }
-            var kind = g.getAttribute("data-kind") || "comment";
-            if (num(inner) >= (TH[kind] || 3)) { g.classList.add("show"); } else { pending = true; }
-          });
-          return pending;
+        // Ikeda 指定 (2026-11-25): コメント数・PV は 2026-12-31 まで非表示、2027-01-01 から表示
+        function run() {
+          var jst = new Date(Date.now() + (9 * 60 + new Date().getTimezoneOffset()) * 60000);
+          var ymd = jst.getFullYear() + "-" + String(jst.getMonth() + 1).padStart(2, "0") + "-" + String(jst.getDate()).padStart(2, "0");
+          if (ymd > "2026-12-31") {
+            document.querySelectorAll(".count-guard").forEach(function (g) { g.classList.add("show"); });
+          }
         }
-        var n = 0;
-        var iv = setInterval(function () { n++; if (!check() || n > 24) clearInterval(iv); }, 500);
+        if (document.readyState === "loading") { document.addEventListener("DOMContentLoaded", run); } else { run(); }
       })();
     </script>
   </section>
