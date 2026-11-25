@@ -199,6 +199,8 @@ footer.site a{color:#dbe5ef}
   transition:background .15s, color .15s;
 }
 .rank-tab.active{background:var(--navy);border-color:var(--navy);color:#fff}
+.rank-tabs-team{flex-wrap:wrap}
+.rank-tabs-team .rank-tab{flex:0 1 auto;padding:5px 12px;font-size:12.5px}
 .rank-panel[hidden]{display:none}
 
 /* Xシェアボタン（2026-11-24 追加） */
