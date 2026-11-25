@@ -213,3 +213,6 @@ footer.site a{color:#dbe5ef}
 /* count guards (2026-11-25): hide small counts until they grow */
 .count-guard{display:none}
 .count-guard.show{display:inline}
+.tag-more{margin-top:6px}
+.tag-more summary{display:inline-block;cursor:pointer;border:1px solid var(--line,#d8dee6);border-radius:999px;padding:4px 14px;font-size:.85rem;color:var(--navy);background:#fff}
+.tag-more[open ] summary{margin-bottom:4px}
