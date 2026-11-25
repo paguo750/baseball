@@ -6,6 +6,13 @@
     <description>プロ野球ニュースを毎時更新。ニュースの先は、コメント欄で。</description>
     <language>ja</language>
     <item>
+      <title>MLBが選手会を提訴、ロックアウトの合法性を裁判所へ　交渉は法廷闘争に</title>
+      <link>https://baseball.pug-o.jp/news/2026-11-26-mlb-sues-players-union.html</link>
+      <guid isPermaLink="true">https://baseball.pug-o.jp/news/2026-11-26-mlb-sues-players-union.html</guid>
+      <pubDate>Thu, 26 Nov 2026 05:00:00 +0900</pubDate>
+      <description>MLB機構は25日（米東部時間）、12月1日の現行労使協定失効後に予定しているロックアウトについて、連邦裁判所に合法性の確認を求め、選手会を提訴した。訴状は38ページで、選手会が組合の地位を放棄して独占禁止法で争う動きを封じる狙いがあるとみられる。選手会は「まったく根拠のない提訴だ」と反発し、交渉のテーブルで決着させるべきだと主張した。ロックアウトに入れば契約交渉やトレードは凍結され、ポスティングで交渉中の伊藤大海やFAの鈴木誠也、今永昇太、菅野智之らの去就にも影響が出る。</description>
+    </item>
+    <item>
       <title>才木浩人「全打席打ってほしい」　カブスへ旅立つ佐藤輝明に阪神ナインがエール</title>
       <link>https://baseball.pug-o.jp/news/2026-11-26-hanshin-nain-sato-eeru.html</link>
       <guid isPermaLink="true">https://baseball.pug-o.jp/news/2026-11-26-hanshin-nain-sato-eeru.html</guid>
@@ -137,13 +144,6 @@
       <guid isPermaLink="true">https://baseball.pug-o.jp/news/2026-11-25-ohtani-nitoryu-usmedia-higen.html</guid>
       <pubDate>Wed, 25 Nov 2026 21:00:00 +0900</pubDate>
       <description>ドジャースはタリク・スクーバル投手がメッツと契約したことで、来季は大谷翔平の二刀流復帰が欠かせなくなったとみられている。今季の大谷は後半戦、腕と膝の故障で登板できず、ポストシーズンでは打撃でも本来の力を出せなかった。ニューヨーク・ポストの記者は、来季は今季以上に起用を賢明にし、故障を繰り返さない管理が必要だと指摘している。前半戦はサイ・ヤング賞やMVPを狙える成績だっただけに、来季の起用法が問われる形になった。</description>
-    </item>
-    <item>
-      <title>佐藤輝明の欠席で藤川監督が代理受賞ラッシュ　SNSも盛り上がる</title>
-      <link>https://baseball.pug-o.jp/news/2026-11-25-fujikawa-dairi-jusho-sato-kesseki.html</link>
-      <guid isPermaLink="true">https://baseball.pug-o.jp/news/2026-11-25-fujikawa-dairi-jusho-sato-kesseki.html</guid>
-      <pubDate>Wed, 25 Nov 2026 20:00:00 +0900</pubDate>
-      <description>佐藤輝明はMVPなど表彰ラッシュだったが、カブスとの契約合意が報じられたばかりで米国滞在中とみられ、表彰式を欠席した。佐藤が表彰されるたびに、代わって壇上に上がったのは藤川球児監督で、SNSでは代理登壇を面白がる声が相次いだ。カブスは藤川監督が米1年目に所属したチームでもあり、縁を感じる場面にもなった。</description>
     </item>
   </channel>
 </rss>
