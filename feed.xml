@@ -6,6 +6,20 @@
     <description>プロ野球ニュースを毎時更新。ニュースの先は、コメント欄で。</description>
     <language>ja</language>
     <item>
+      <title>小久保監督が柳田を「陰のMVP」と絶賛　カムバック賞はならずも復活の1年</title>
+      <link>https://baseball.pug-o.jp/news/2026-11-27-kokubo-praises-yanagita-comeback.html</link>
+      <guid isPermaLink="true">https://baseball.pug-o.jp/news/2026-11-27-kokubo-praises-yanagita-comeback.html</guid>
+      <pubDate>Fri, 27 Nov 2026 02:00:00 +0900</pubDate>
+      <description>NPBアワーズの式典後、小久保裕紀監督は式典に出席しなかった柳田悠岐について「彼が一人いるかどうかで全然違った」と賛辞を贈った。2年連続の長期離脱から復活した柳田は今季128試合に出場し、3年ぶりの規定打席到達と5年ぶりの打率3割を記録したが、カムバック賞の受賞はならなかった。パ・リーグのカムバック賞は2001年の盛田幸妃以来、該当者が出ていない。</description>
+    </item>
+    <item>
+      <title>来季からピッチクロック試験導入へ　走者なし18秒・あり23秒、罰則なしのトライアル</title>
+      <link>https://baseball.pug-o.jp/news/2026-11-27-pitch-clock-trial-2027.html</link>
+      <guid isPermaLink="true">https://baseball.pug-o.jp/news/2026-11-27-pitch-clock-trial-2027.html</guid>
+      <pubDate>Fri, 27 Nov 2026 02:00:00 +0900</pubDate>
+      <description>NPBと選手会は25日の事務折衝で、来季から投球間隔制限「ピッチクロック」を試験導入する方針を確認した。投手は球を受けてから走者がいない場合は18秒以内、走者がいる場合は23秒以内に投球動作に入る決まりで、MLBやWBCより緩やかな設定になった。試験導入のため違反しても1ボールなどの罰則はなく、選手会の近藤健介会長は「罰則がないのは正直、難しい」とし、12月7日の総会で話し合う考えを示した。</description>
+    </item>
+    <item>
       <title>巨人、新人賞コンビ・竹丸和幸と浦田俊輔のパペット発表　うさぎとチーターで特徴を表現</title>
       <link>https://baseball.pug-o.jp/news/2026-11-26-kyojin-takemaru-urada-puppet.html</link>
       <guid isPermaLink="true">https://baseball.pug-o.jp/news/2026-11-26-kyojin-takemaru-urada-puppet.html</guid>
@@ -130,20 +144,6 @@
       <guid isPermaLink="true">https://baseball.pug-o.jp/news/2026-11-26-shuto-ukyo-shogai-gg-sengen.html</guid>
       <pubDate>Thu, 26 Nov 2026 19:00:00 +0900</pubDate>
       <description>ソフトバンクの周東佑京外野手が26日、都内で行われたゴールデン・グラブ賞の表彰式に出席し、外野手部門で3年連続3度目の受賞を果たした。今季は127試合に出場して無失策、刺殺数は両リーグトップの316個を記録した。セ・パ最高得票数の212票を集めた周東は、来季4年連続となれば球団外野手の最長記録になるとし、「やめるまで取り続けたい」と“生涯GG賞”を宣言した。</description>
-    </item>
-    <item>
-      <title>西武ドラ1・川尻啓人と仮契約　契約金1億円、最速158キロの大型右腕に即戦力の期待</title>
-      <link>https://baseball.pug-o.jp/news/2026-11-26-kawajiri-hiroto-kari-keiyaku.html</link>
-      <guid isPermaLink="true">https://baseball.pug-o.jp/news/2026-11-26-kawajiri-hiroto-kari-keiyaku.html</guid>
-      <pubDate>Thu, 26 Nov 2026 18:00:00 +0900</pubDate>
-      <description>西武からドラフト1位指名を受けた川尻啓人投手（亜大）が26日、横浜市内で入団交渉に臨み、契約金1億円プラス出来高、年俸1600万円で仮契約を結んだ。189センチ、94キロの大型右腕で、最速158キロの直球が持ち味。今秋の東都大学リーグではノーヒットノーランを達成し、4勝0敗でベストナインに選ばれた。平良海馬がメジャーへ移籍した西武は、来季から先発の即戦力として期待している。</description>
-    </item>
-    <item>
-      <title>楽天・辰己涼介、ゴールデン・グラブ賞6年連続　2032年までの連続受賞へ、福本豊の12年を視野に</title>
-      <link>https://baseball.pug-o.jp/news/2026-11-26-tatsumi-gg-2032.html</link>
-      <guid isPermaLink="true">https://baseball.pug-o.jp/news/2026-11-26-tatsumi-gg-2032.html</guid>
-      <pubDate>Thu, 26 Nov 2026 18:00:00 +0900</pubDate>
-      <description>第55回三井ゴールデン・グラブ賞の表彰式が26日、都内で行われ、楽天の辰己涼介外野手が6年連続6回目の受賞を果たした。最多連続受賞は福本豊の12年で、辰己は「今、折り返し」とし、2032年までの連続受賞を目標に掲げた。派手な衣装で登壇したが、守備については「失点を防ぐことは点を取ることに等しい」と真剣に語った。</description>
     </item>
   </channel>
 </rss>
