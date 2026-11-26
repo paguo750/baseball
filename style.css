@@ -201,8 +201,7 @@ footer.site a{color:#dbe5ef}
 .rank-tab.active{background:var(--navy);border-color:var(--navy);color:#fff}
 .rank-league-row{margin-bottom:8px}
 .rank-league-row:last-child{margin-bottom:0}
-.rank-league-row .rank-tab{flex:1;padding:6px 0;font-size:13px}
-.rank-league-row .rank-tab-all{flex:2}
+.rank-league-row .rank-tab{flex:1 1 0;min-width:0;padding:8px 0;font-size:13.5px}
 .rank-group{margin-bottom:4px}
 .rank-label{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;color:#7a8a99;margin-bottom:6px}
 .rank-group-team{border-top:1px solid #d9e2ea;margin-top:10px;padding-top:10px}
