@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-yanagawa-hori-contract-renewal.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T13:00:00+09:00</news:publication_date>
+      <news:title>日本ハム・柳川大晟が2.5倍増の8400万円で更改　来季は「40セーブ」目標</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-shuto-ukyo-one-day-station-master.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T13:00:00+09:00</news:publication_date>
+      <news:title>ソフトバンク・周東佑京が博多駅で1日駅長　「歩かず、走らず、2列で」</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-imagawa-yuma-hold-explanation.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T13:00:00+09:00</news:publication_date>
+      <news:title>日本ハム・今川優馬、保留の理由を自ら説明　「出場機会をくれとは言ってない」</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://baseball.pug-o.jp/news/2026-11-28-nakagawa-keita-compensation-protect-list.html</loc>
     <news:news>
       <news:publication>
