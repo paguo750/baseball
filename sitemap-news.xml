@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-sakakibara-nanato-provisional-contract-hanshin.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T17:00:00+09:00</news:publication_date>
+      <news:title>阪神ドラ1・榊原七斗が仮契約　契約金1億円＋出来高5000万円、目標は「開幕スタメン」</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-kanemaru-yumeto-contract-renewal-sawamura-goal.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T17:00:00+09:00</news:publication_date>
+      <news:title>中日・金丸夢斗、2700万円増の5200万円で更改　来季は「沢村賞を目指す」と宣言</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://baseball.pug-o.jp/news/2026-11-28-yakult-2027-slogan-enshin-mankai.html</loc>
     <news:news>
       <news:publication>
