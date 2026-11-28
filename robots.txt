@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://baseball.pug-o.jp/sitemap.xml
+Sitemap: https://baseball.pug-o.jp/sitemap-news.xml
