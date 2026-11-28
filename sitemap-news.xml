@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-ebina-tatsuo-alma-mater-championship-vow.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:00:00+09:00</news:publication_date>
+      <news:title>DeNA・蝦名達夫、母校で来季の日本一を誓う　「納得がいかずに終わったシーズン」</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-cubs-black-friday-four-deals.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:00:00+09:00</news:publication_date>
+      <news:title>カブス、ブラックフライデーに4案件まとめて決着　佐藤正式契約に伊藤合意、救援左腕ヤーブローも</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-hanshin-nakagawa-keita-official-announcement.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T14:00:00+09:00</news:publication_date>
+      <news:title>阪神、中川圭太の獲得を正式発表　FA補強第2弾が決定</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://baseball.pug-o.jp/news/2026-11-28-yanagawa-hori-contract-renewal.html</loc>
     <news:news>
       <news:publication>
