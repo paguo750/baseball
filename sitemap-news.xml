@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-orix-big-thanks-nakagawa-keita-farewell.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T18:00:00+09:00</news:publication_date>
+      <news:title>オリックス公式、中川圭太へ「BIG THANKS」の送り出し　阪神移籍決定から1時間後に粋な1枚</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-sato-teruaki-cubs-of-notation-fan-reaction.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T18:00:00+09:00</news:publication_date>
+      <news:title>カブス公式発表で佐藤輝明は「OF」表記　阪神では内野手登録、ファンに戸惑いと納得</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-itoi-yoshio-instagram-sato-teruaki-cheer.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T18:00:00+09:00</news:publication_date>
+      <news:title>佐藤輝明のカブス入り決定に“師匠”糸井嘉男が粋なエール　カブスユニ姿の加工写真を投稿</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://baseball.pug-o.jp/news/2026-11-28-sakakibara-nanato-provisional-contract-hanshin.html</loc>
     <news:news>
       <news:publication>
