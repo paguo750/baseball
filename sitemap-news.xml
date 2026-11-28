@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-fa-market-status-five-undecided.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T15:00:00+09:00</news:publication_date>
+      <news:title>FA戦線は10人中5人が決着　残るは小島・太田・床田・坂倉・森下の5人</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-sato-teruaki-royals-five-year-offer.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T15:00:00+09:00</news:publication_date>
+      <news:title>佐藤輝明の争奪戦にロイヤルズも参戦していた　5年契約を提示、米記者が明かす</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://baseball.pug-o.jp/news/2026-11-28-ebina-tatsuo-alma-mater-championship-vow.html</loc>
     <news:news>
       <news:publication>
