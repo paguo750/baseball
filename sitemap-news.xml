@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-nakagawa-keita-compensation-protect-list.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T12:00:00+09:00</news:publication_date>
+      <news:title>阪神・中川圭太の獲得で人的補償の可能性も　オリックスはBランク、プロテクト28人選びが難題に</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-muramatsu-kaito-contract-renewal-players-chairman.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T12:00:00+09:00</news:publication_date>
+      <news:title>中日・村松開人、2400万円増の5200万円でサイン　来季から選手会長に就任</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-oda-shoki-us-college-option.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T12:00:00+09:00</news:publication_date>
+      <news:title>織田翔希、巨人でもメジャーでもない「第3の道」　米誌が大学進学の可能性を伝える</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://baseball.pug-o.jp/news/2026-11-28-sasaki-roki-dodgers-digest-breakout-hope.html</loc>
     <news:news>
       <news:publication>
