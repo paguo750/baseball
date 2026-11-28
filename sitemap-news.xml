@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-senryokugai-veterans-still-undecided.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T19:00:00+09:00</news:publication_date>
+      <news:title>戦力外から2か月、去就未定の大物たち　小園海斗・中村奨吾・青柳晃洋らの新天地は</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-kamichatani-taiga-contract-hold.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T19:00:00+09:00</news:publication_date>
+      <news:title>ソフトバンク・上茶谷大河が契約更改を保留　「便利屋」査定の明確化を求める</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-tokoda-hiroki-fa-still-undecided.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T19:00:00+09:00</news:publication_date>
+      <news:title>広島・床田寛樹、FA去就は「まだです」　マツダ訪問も次回交渉は未定</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-abe-toshiki-double-salary-renewal.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T19:00:00+09:00</news:publication_date>
+      <news:title>中日・阿部寿樹、倍増3000万円でサイン　4年ぶり復帰の「マスター」が勝負強さで評価される</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://baseball.pug-o.jp/news/2026-11-28-orix-big-thanks-nakagawa-keita-farewell.html</loc>
     <news:news>
       <news:publication>
