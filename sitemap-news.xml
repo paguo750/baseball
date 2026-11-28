@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-yakult-2027-slogan-enshin-mankai.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T16:00:00+09:00</news:publication_date>
+      <news:title>ヤクルト、来季のスローガンは「燕心満開」　池山監督がファン感で発表</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://baseball.pug-o.jp/news/2026-11-28-nakamura-yuhei-super-ultra-comeback.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>飼い主の野球コメントスタジアム</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T16:00:00+09:00</news:publication_date>
+      <news:title>ヤクルト・中村悠平、右眼の大けがから「スーパーウルトラカムバックを目指して」　ファン感で元気な姿</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://baseball.pug-o.jp/news/2026-11-28-fa-market-status-five-undecided.html</loc>
     <news:news>
       <news:publication>
